@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f1f5ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.card {
+  width: 250px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+.card p {
+  margin: 20px;
+  margin-top: 0;
+  font-size: large;
+}
+.pok-img {
+    margin-top: 20px;
+height: 50px;
+width: 45px;
+}
+.card-header {
+  background: orange;
+  height: 120px;
+  border-bottom-left-radius: 50% 40%;
+  border-bottom-right-radius: 50% 40%;
+  position: relative;
+}
+
+.hp {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #fff;
+  color: #333;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Pokémon image overlaps header */
+.pokemon-img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  position: relative;
+  margin-top: -80px; /* pull image up */
+  z-index: 2;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #222;
+}
+
+.types {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 5px 0 10px 0;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.types span {
+  padding: 20px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0 18px;
+  border-top: 1px solid #eee;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #444;
+}
+
+.stat-value {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 3px;
+}
+
+/* Generate button */
+.btn {
+  margin-top: 20px;
+  padding: 12px 28px;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #333;
+}
